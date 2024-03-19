@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Random Number Generator</title>
+  <style>
+    .a
+    {
+        text-align: center;
+    }
+  </style>
+</head>
+<body><
+    <div class ='a'>
+  <h1>Random Number Generator</h1>
+  <label for="randomNumber">Random Number:</label>
+
+  <input type="text" id="randomNumber" readonly>
+  <br><br>
+  <button onclick="generateRandomNumber()">Generate</button>
+  </div>
+
+  <script>
+    function generateRandomNumber() {
+      // Generate a random number between 1 and 100 (you can modify this range)
+      var randomNumber = Math.floor(Math.random() * 100) ;
+
+      // Display the random number in the textbox
+      document.getElementById("randomNumber").value = randomNumber;
+    }
+  </script>
+</body>
+</html>

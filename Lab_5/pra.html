@@ -1,0 +1,35 @@
+<html>
+    <script>
+        function f()
+        {
+            var x;
+            x=10;
+            x='sffr';
+            x=new Date();
+            x=[10,12,25];
+            x=true;
+           // document.write(typeof(x));
+          // const c=20;
+          // c=23; //not possible because constant value can not change
+           const car={type:"Fiat", model:"500", color:"white"};
+           //alert("The type of cars is " +car["type"]); //can use . or this way using indexing.
+           //alert("The model of car is " +car.model);
+
+let person={
+    fname:"Ravi",
+    lname:"Kumar",
+    name: function(){
+        return this.fname+ " "+this.lname;}
+    
+};
+alert(person.name);
+
+        }
+        //undefined because var is used it has local scope now 
+        //earlier var had global scope and let local scope. 
+
+       // document.write(typeof(x));
+
+</script>
+<body onload="f()"></body>
+</html>

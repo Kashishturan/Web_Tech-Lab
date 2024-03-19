@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Capitalize
+        </title>
+        <script>
+            function Capitalize(str){
+                let inputText=document.getElementById('input text').value;
+      let result=Capitalize(inputText)
+                let words = str.split(' ');
+      for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+      }
+      document.getElementBytext("display").innerHTML="The capitalize string is : "+words;
+    }
+            
+        </script>
+        <style>
+            #display{
+                background-color: aqua;
+            }
+        </style>  </head>
+    <body>
+        <button on click="capitalize()">Result</button>
+        
+    </body>
+</html>

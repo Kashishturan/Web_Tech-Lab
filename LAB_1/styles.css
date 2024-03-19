@@ -1,0 +1,24 @@
+.c{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+.kashish{
+    font-size: 35px;
+    color: blue;
+}
+.b{
+    margin-top: -15px;
+    font-size: 25px;
+}
+.a{
+    margin-top: -10px;
+    font-size-adjust: 60px;
+    color: black;
+}
+.k{
+    display: flex;
+    justify-content: space-evenly;
+}

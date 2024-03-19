@@ -1,0 +1,20 @@
+.container
+{
+    border: 4px inset rgb(63, 206, 53) ;
+    width: 40%;
+    padding: 10px;
+    
+    
+}
+body{
+   margin: 300px;
+   margin-left: 300px;
+   background-color: lightblue;
+}
+.a{
+    display: grid;
+    place-items: center;
+}
+.b{
+    text-align: center;
+}

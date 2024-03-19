@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Larger number
+        </title>
+        <script>
+            function largerNum()
+            {
+                let n1=parseInt(prompt("Enter First no."));
+                let n2=parseInt(prompt("Enter Second no."));
+                let l=(n1>n2?n1:n2);
+                document.getElementById("display").innerHTML="The larger number is " +l;
+                   }
+         </script>
+         <style>
+            #display
+            {
+                background-color: aquamarine;
+                color:black;
+                padding: 40px;
+                margin: 150px;
+                margin-left: 575px;
+                width: 250px;          
+                font-size: x-large;  
+            }
+         </style>
+    </head>
+    <body>
+          <button onclick="largerNum()" style=" font-size: larger; margin: 50px;">Print the larger number.</button>
+          
+        <p id="display">
+        
+        </p>
+    </body>
+</html>

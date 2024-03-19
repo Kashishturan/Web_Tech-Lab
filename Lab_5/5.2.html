@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <title>Capitalize Words</title>
+</head>
+<body>
+
+  <h1>Capitalize Words Example</h1>
+
+  <textarea id="inputText" placeholder="Enter a sentence"></textarea>
+  <button onclick="capitalizeAndDisplay()">Capitalize</button>
+
+  <h2>Result:</h2>
+  <p id="result"></p>
+
+  <script>
+    function capitalizeWords(str) {
+      let words = str.split(' ');
+      for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+      }
+      return words.join(' ');
+    }
+
+    function capitalizeAndDisplay() {
+      let inputText = document.getElementById('inputText').value;
+      let result = capitalizeWords(inputText);
+      document.getElementById('result').innerText = result;
+    }
+  </script>
+
+</body>
+</html>

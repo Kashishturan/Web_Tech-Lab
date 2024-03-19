@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Date of Birth Difference</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function calculateAge() {
+            // Get user's date of birth from the input field
+            var dobInput = document.getElementById('dob');
+            var dob = new Date(dobInput.value);
+
+            // Check if a valid date is entered
+            if (isNaN(dob.getTime())) {
+                alert("Please enter a valid date of birth");
+                return;
+            }
+
+            // Get the current date
+            var currentDate = new Date();
+
+            // Calculate the difference in milliseconds
+            var timeDifference = currentDate - dob;
+
+            // Convert milliseconds to years
+            var ageInYears = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365.25));
+
+            // Display the result in the text box
+            var ageTextBox = document.getElementById('age');
+            ageTextBox.value = ageInYears;
+        }
+    </script>
+    <div class="k">
+    <label for="dob">Enter your Date of Birth:</label>
+    <input type="date" id="dob">
+    <button onclick="calculateAge()">Calculate Age</button>
+
+    <br>
+
+    <label for="age">Current Age:</label>
+    <input type="text" id="age" readonly>
+</div>
+
+</body>
+</html>

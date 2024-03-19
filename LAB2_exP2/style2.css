@@ -1,0 +1,15 @@
+.container{
+    border: 4px inset rgb(218, 57, 32);
+    width: 40%;
+    padding: 10px;
+    
+}
+.a{
+    display: grid;
+    place-items: center;
+    margin: 200px;
+}
+body
+{
+    background-color: rgb(147, 203, 246);
+}

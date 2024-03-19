@@ -1,0 +1,11 @@
+.b{
+    border: 4px groove lightseagreen;
+    width: 110%;
+    padding: 10;
+    }
+    .a{
+        display: grid;
+    place-content: center;
+    margin: 200;
+    
+    }
